@@ -1,0 +1,804 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+    <!-- ======= Hero Section ======= -->
+    <section id="hero">
+
+      <div class="container">
+        <div class="row justify-content-between">
+          <div class="col-lg-6 pt-5 pt-lg-0 order-2 order-lg-1 d-flex align-items-center">
+            <div data-aos="zoom-out">
+              <h1>Transforming Your Ideas Into <span>Reality</span></h1>
+              <h2>Arkab Tech Solutions, a software company that is providing robust & reliable solutions in software development to surpass your business expectations.</h2>
+              <div class="text-center text-lg-start">
+                <a href="{% url 'get-a-quote' %}" class="btn-get-started scrollto">GET A QUOTE</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-out" data-aos-delay="300">
+            <img src="{% static 'img/hero-img -1.png' %}" class="img-fluid animated" alt="" width="100%" height="auto" loading="lazy">
+          </div>
+        </div>
+      </div>
+
+      <svg class="hero-waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28 " preserveAspectRatio="none">
+        <defs>
+          <path id="wave-path" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z">
+        </defs>
+        <g class="wave1">
+          <use xlink:href="#wave-path" x="50" y="3" fill="rgba(255,255,255, .1)">
+        </g>
+        <g class="wave2">
+          <use xlink:href="#wave-path" x="50" y="0" fill="rgba(255,255,255, .2)">
+        </g>
+        <g class="wave3">
+          <use xlink:href="#wave-path" x="50" y="9" fill="#fff">
+        </g>
+      </svg>
+
+    </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= Featured Services Section ======= -->
+    <section id="about" class="featured-services">
+      <div class="container">
+
+        <div class="section-header">
+          <h2>Our Key Values</h2>
+          <p>Core values are critical if you want to create a long-lasting, successful, and motivating place to work.</p>
+        </div>
+
+        <div class="row gy-4">
+
+          <div class="col-xl-3 col-md-6 d-flex" data-aos="zoom-out">
+            <div class="service-item position-relative">
+              <div class="icon"><i class="bi bi-broadcast icon"></i></div>
+              <h4><a href="" class="stretched-link">Smart Solutions</a></h4>
+              <p>We offer smart and modern solutions for growing your business</p>
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-md-6 d-flex" data-aos="zoom-out" data-aos-delay="200">
+            <div class="service-item position-relative">
+              <div class="icon"><i class="bi bi-activity icon"></i></div>
+              <h4><a href="" class="stretched-link">Sincerity</a></h4>
+              <p>Quality deliverance of work and sincerity to clients and organization</p>
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-md-6 d-flex" data-aos="zoom-out" data-aos-delay="400">
+            <div class="service-item position-relative">
+              <div class="icon"><i class="bi bi-bounding-box-circles icon"></i></div>
+              <h4><a href="" class="stretched-link">Dedication</a></h4>
+              <p>Ethical values towards both the team members and clients, no matter what</p>
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-md-6 d-flex" data-aos="zoom-out" data-aos-delay="600">
+            <div class="service-item position-relative">
+              <div class="icon"><i class="bi bi-calendar4-week icon"></i></div>
+              <h4><a href="" class="stretched-link">Results</a></h4>
+              <p>Timely deliverance of work according to the clients need.</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+    <!-- End Featured Services Section -->
+
+    <!-- ======= Call To Action Section ======= -->
+    <section id="about" class="cta facts">
+      <div class="container" data-aos="zoom-out">
+
+        <div class="row g-4">
+
+          <div class="col-lg-8 col-md-6 content d-flex flex-column justify-content-center order-last order-md-first">
+            <h3><em>Who We Are</em></h3>
+            <p>Arkab Tech Solutions is a software company that connects strategy, design and engineering services into a seamless workflow devised to support clients every step of the way.</p>
+            <p>Founded in 2022, Arkab Tech Solutions rapidly became a large team of like-minded professionals with a shared vision for their company. The team is passionate about creating valuable products and helping other businesses climb the ladder of technological development.</p>
+            <p>Over the past 5 years, we have designed and built a diverse range of high-quality products from scratch. Our specialists have expertise in a wide variety of spheres including real estate, e-learning, healthcare, e-commerce, advertising, augmented reality, finance, sharing economy, and many more.</p>
+            <p>After 5 years of experience, we stand more convinced than ever in our core expertise. We have completed 80+ projects with 50+ clients. The thing we are most proud of is winning the confidence of our clients.</p>
+            <!-- <a class="cta-btn align-self-start" href="#">Call To Action</a> -->
+          </div>
+
+          <div class="col-lg-4 col-md-6 order-first order-md-last d-flex align-items-center">
+            <div class="img">
+              <img src="{% static 'img/group1.webp' %}" alt="" class="img-fluid p-lg-3" width="100%" height="auto" loading="lazy">
+            </div>
+          </div>
+
+        </div>
+
+        <div class="row no-gutters">
+
+          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up">
+            <div class="count-box">
+              <i class="bi bi-emoji-smile"></i>
+              <span data-purecounter-start="0" data-purecounter-end="54" data-purecounter-duration="1" class="purecounter"></span>
+              <p><strong>Happy Clients</strong> we have</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up" data-aos-delay="100">
+            <div class="count-box">
+              <i class="bi bi-journal-richtext"></i>
+              <span data-purecounter-start="0" data-purecounter-end="88" data-purecounter-duration="1" class="purecounter"></span>
+              <p><strong>Projects</strong> sucessfully done</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up" data-aos-delay="200">
+            <div class="count-box">
+              <i class="bi bi-globe2"></i>
+              <span data-purecounter-start="0" data-purecounter-end="15" data-purecounter-duration="1" class="purecounter"></span>
+              <p><strong>Countries</strong> we serve</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up" data-aos-delay="300">
+            <div class="count-box">
+              <i class="bi bi-clock-history"></i>
+              <span data-purecounter-start="0" data-purecounter-end="5" data-purecounter-duration="1" class="purecounter"></span>
+              <p><strong>Years</strong> of experience</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Call To Action Section -->
+
+    <!-- ======= Departments Section ======= -->
+    <section id="services" class="departments">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-header">
+          <h2>Services</h2>
+          <p>Arkab Tech Solutions is a leading software development company, focusing upon the advancement of the IT industry all around the globe.
+            We hold an enthusiastic team of inventors performing incredibly to provide software development services to expand the client’s business
+            and help them achieve their organizational goals of profit maximization.
+          </p>
+        </div>
+
+        <div class="row" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-4 mb-5 mb-lg-0">
+            <ul class="nav nav-tabs flex-column">
+              <li class="nav-item">
+                <a class="nav-link active show" data-bs-toggle="tab" data-bs-target="#tab_1">
+                  <h4>Web Development</h4>
+                  <p>Web Development Services Remarkably Augmenting Business Revenues</p>
+                </a>
+              </li>
+              <li class="nav-item mt-2">
+                <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab_2">
+                  <h4>App Development</h4>
+                  <p>Mobile App Development Services Offering Exquisite User Experiences.</p>
+                </a>
+              </li>
+              <li class="nav-item mt-2">
+                <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab_3">
+                  <h4>Software Development</h4>
+                  <p>Custom Software Development Services Supporting Innovative Transformations</p>
+                </a>
+              </li>
+              <li class="nav-item mt-2">
+                <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab_4">
+                  <h4>UI/UX Design</h4>
+                  <p>Engaging UI/UX Design Services that Outperform Customer Expectations</p>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-8">
+            <div class="tab-content">
+              <div class="tab-pane active show" id="tab_1">
+                <h3>Web Development</h3>
+                <p class="fst-italic">We provide all sorts of end-to-end web development solutions for you. Our Full-stack developers are highly skilled
+                  and are able to develop websites from scratch as well as restructure or add features to an existing website.</p>
+                <!-- <img src="assets/img/departments-1.jpg" alt="" class="img-fluid"> -->
+                <div class="row">
+                  <div class="col-lg-8">
+                    <div data-aos="fade-left" data-aos-delay="300">
+                      <div class="d-flex align-items-center mt-4">
+                        <i class="bi bi-check2"></i>
+                        <h4>Front-End Development</h4>
+                      </div>
+                      <p>To deliver innovative website development services, we carry proficient and skilled front-end engineers shaping websites fulfilling the client goals and company models.</p>
+                    </div>
+
+                    <div data-aos="fade-left" data-aos-delay="500">
+                      <div class="d-flex align-items-center mt-4">
+                        <i class="bi bi-check2"></i>
+                        <h4>Back-End Development</h4>
+                      </div>
+                      <p>We build long-lasting relationships with our clients, therefore generate Python based back-end web development solutions, having scalable options with the advancing digital framework.</p>
+                    </div>
+
+                    <div data-aos="fade-left" data-aos-delay="700">
+                      <div class="d-flex align-items-center mt-4">
+                        <i class="bi bi-check2"></i>
+                        <h4>Full-Stack Development</h4>
+                      </div>
+                      <p>We deliver detailed comprehensive website development services, starting from the modest prototype to intricate back-end development using the latest technological tools.</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 my-auto">
+                    <img src="{% static 'img/features-2.svg' %}" alt="" class="img-fluid" width="100%" height="auto" loading="lazy">
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="tab-pane" id="tab_2">
+                <h3>App Development</h3>
+                <p class="fst-italic">We provide robust mobile solutions for all platforms i.e. (IOS and Android). We work closely with you to make the application look exactly how you envision it and simultaneously optimize it as best as possible to support a wide range of smartphones.</p>
+                <!-- <img src="assets/img/departments-2.jpg" alt="" class="img-fluid"> -->
+                <div class="row">
+                  <div class="col-lg-8">
+                    <div class="d-flex align-items-center mt-4">
+                      <i class="bi bi-check2"></i>
+                      <h4>Front-End App Development</h4>
+                    </div>
+                    <p>We, being a software development company, not only focus upon the appearance but also operate for the high performance and completely functional mobile applications.</p>
+
+                    <div class="d-flex align-items-center mt-4">
+                      <i class="bi bi-check2"></i>
+                      <h4>Back-End App Development</h4>
+                    </div>
+                    <p>We prefers to create cloud based back-end software solutions for mobile applications, as it ultimately makes it easier to scale the product with the technological advancements.</p>
+
+                    <div class="d-flex align-items-center mt-4">
+                      <i class="bi bi-check2"></i>
+                      <h4>Full-Stack App Development</h4>
+                    </div>
+                    <p>We knows the art of serving businesses in a remarkable manner, starting from the basic front-end programming to building complex back-end structures.</p>
+                  </div>
+                  <div class="col-lg-4 my-auto">
+                    <img src="{% static 'img/mobile.svg' %}" alt="" class="img-fluid" width="100%" height="auto" loading="lazy">
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="tab-pane" id="tab_3">
+                <h3>Software Development</h3>
+                <p class="fst-italic">We develop custom software solutions as per client requirements. Whatever you require in your idealized solution, our teams have you covered. Our teams devise the best strategy to tackle the problem and then provide an efficient solution for it.</p>
+                <!-- <img src="assets/img/departments-3.jpg" alt="" class="img-fluid"> -->
+                <div class="row">
+                  <div class="col-lg-8">
+                    <div class="d-flex align-items-center mt-4">
+                      <i class="bi bi-check2"></i>
+                      <h4>Web App Development</h4>
+                    </div>
+                    <p>Our squad of skilled web app developers uses modern technological tools to deliver exclusive web app development services with incredible interfaces and robust back-end programming.</p>
+
+                    <div class="d-flex align-items-center mt-4">
+                      <i class="bi bi-check2"></i>
+                      <h4>Mobile App Development</h4>
+                    </div>
+                    <p>Our powerful SDLC tools and methodologies are there to ensure smooth mobile app development services through our native and cross-platform development needs.</p>
+
+                    <div class="d-flex align-items-center mt-4">
+                      <i class="bi bi-check2"></i>
+                      <h4>Cloud App Development</h4>
+                    </div>
+                    <p>Arkab Tech Solutions offers optimized cloud application development services helping organizations secure their investments and effortlessly migrate apps, workflows, and infrastructures to cloud-based solutions.</p>
+                  </div>
+                  <div class="col-lg-4 my-auto">
+                    <img src="{% static 'img/software2.svg' %}" alt="" class="img-fluid" width="100%" height="auto" loading="lazy">
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="tab-pane" id="tab_4">
+                <h3>UI/UX Design</h3>
+                <p class="fst-italic">We create dynamic, intuitive, and user-friendly web and mobile designs that give users the best experience possible, all resulting in higher user engagement and customer satisfaction.</p>
+                <!-- <img src="assets/img/departments-4.jpg" alt="" class="img-fluid"> -->
+                <div class="row">
+                  <div class="col-lg-8">
+                    <div class="d-flex align-items-center mt-4">
+                      <i class="bi bi-check2"></i>
+                      <h4>Analysis & User Research</h4>
+                    </div>
+                    <p>Before beginning the UI/UX design process, we perform comprehensive research to create a customer persona and map out your product's customer path in order to provide the greatest possible experience.</p>
+
+                    <div class="d-flex align-items-center mt-4">
+                      <i class="bi bi-check2"></i>
+                      <h4>Rapid Prototyping</h4>
+                    </div>
+                    <p>To learn about the usability of your prospective product, we create trial builds of the user interface design and have them examined by real-users and testing professionals.</p>
+
+                    <div class="d-flex align-items-center mt-4">
+                      <i class="bi bi-check2"></i>
+                      <h4>UX Design</h4>
+                    </div>
+                    <p>We provide brilliant UI/UX design services using the latest technological revolutions to fulfill the corporate challenges and make the customers satisfied with the smooth as well as efficient user experience.</p>
+                  </div>
+                  <div class="col-lg-4 my-auto">
+                    <img src="{% static 'img/features-3.svg' %}" alt="" class="img-fluid" width="100%" height="auto" loading="lazy">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Departments Section -->
+
+    <!-- ======= On Focus Section ======= -->
+    <section id="why-us" class="onfocus">
+      <div class="container-fluid p-0" data-aos="fade-up">
+
+        <div class="row g-0">
+          <div class="col-lg-6 video-play position-relative">
+            <!-- <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="glightbox play-btn"></a> -->
+            <!-- <img src="assets/img/why-us.jpg" alt="" class="img-fluid"> -->
+          </div>
+          <div class="col-lg-6">
+            <div class="content d-flex flex-column justify-content-center h-100">
+              <h3>Why should you choose Arkab Tech Solutions?</h3>
+              <p class="fst-italic">
+                Arkab Tech Solutions, a software development company, focuses not only upon productive business transformations but
+                also aims at the brilliant contribution towards the advanced technological and digital world.
+              </p>
+              <ul>
+                <li><i class="bi bi-check-circle"></i> We try to inflate the business performance, ultimately making them reach fast to their potential customers.</li>
+                <li><i class="bi bi-check-circle"></i> Our development services are not only the best but also affordable, easy to recognize and reliable.</li>
+                <li><i class="bi bi-check-circle"></i> Have extraordinary execution capacity in the current competitive market.</li>
+              </ul>
+              <a href="{% url 'get-a-quote' %}" class="read-more align-self-start"><span>Get A Quote</span><i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End On Focus Section -->
+
+    <!-- ======= Features Section ======= -->
+    <section id="technologies" class="features">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-header">
+          <h2>Top-Rated Technology Stacks</h2>
+          <p>Using the most up-to-date and current technology, we create effective solutions for businesses ranging from startups to Fortune 1000.</p>
+        </div>
+
+        <ul class="nav nav-tabs row gy-4 d-flex">
+
+          <li class="nav-item col-6 col-md-4 col-lg-2">
+            <a class="nav-link active show" data-bs-toggle="tab" data-bs-target="#tab-1">
+              <i class="bi bi-box-seam color-indigo"></i>
+              <h4>Front-End</h4>
+            </a>
+          </li><!-- End Tab 1 Nav -->
+
+          <li class="nav-item col-6 col-md-4 col-lg-2">
+            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-2">
+              <i class="bi bi-server color-teal"></i>
+              <h4>Database</h4>
+            </a>
+          </li><!-- End Tab 2 Nav -->
+
+          <li class="nav-item col-6 col-md-4 col-lg-2">
+            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-3">
+              <i class="bi bi-file-earmark-code color-red"></i>
+              <h4>Backend</h4>
+            </a>
+          </li><!-- End Tab 3 Nav -->
+
+          <li class="nav-item col-6 col-md-4 col-lg-2">
+            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-4">
+              <i class="bi bi-phone color-cyan"></i>
+              <h4>Mobile</h4>
+            </a>
+          </li><!-- End Tab 4 Nav -->
+
+          <li class="nav-item col-6 col-md-4 col-lg-2">
+            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-5">
+              <i class="bi bi-bezier2 color-blue"></i>
+              <h4>UI/UX Design</h4>
+            </a>
+          </li><!-- End Tab 5 Nav -->
+
+          <li class="nav-item col-6 col-md-4 col-lg-2">
+            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-6">
+              <i class="bi bi-cloud-plus color-orange"></i>
+              <h4>DevOps</h4>
+            </a>
+          </li><!-- End Tab 6 Nav -->
+
+        </ul>
+
+        <div class="tab-content">
+
+          <div class="tab-pane active show" id="tab-1">
+            <div class="row gy-4">
+              <div class="col-md-12">
+                <div class="icons">
+                  <div class="icon text-center">
+                    <img src="{% static 'img/html.webp' %}" alt="" class="img-fluid tech-img mb-3" width="128" height="128" loading="lazy">
+                    <p>HTML</p>
+                  </div>
+
+                  <div class="icon text-center">
+                    <img src="{% static 'img/css.webp' %}" alt="" class="img-fluid tech-img mb-3" width="128" height="128" loading="lazy">
+                    <p>CSS</p>
+                  </div>
+
+                  <div class="icon text-center">
+                    <img src="{% static 'img/js.webp' %}" alt="" class="img-fluid tech-img mb-3" width="128" height="128" loading="lazy">
+                    <p>JavaScript</p>
+                  </div>
+
+                  <div class="icon text-center">
+                    <img src="{% static 'img/bootstrap.webp' %}" alt="" class="img-fluid tech-img mb-3" width="128" height="128" loading="lazy">
+                    <p>Bootstrap</p>
+                  </div>
+
+                  <div class="icon text-center">
+                    <img src="{% static 'img/sass.webp' %}" alt="" class="img-fluid tech-img mb-3" width="128" height="128" loading="lazy">
+                    <p>Sass</p>
+                  </div>
+
+                  <div class="icon text-center">
+                    <img src="{% static 'img/react.webp' %}" alt="" class="img-fluid tech-img mb-3" width="128" height="128" loading="lazy">
+                    <p>React Js</p>
+                  </div>
+
+                  <div class="icon text-center">
+                    <img src="{% static 'img/angular.webp' %}" alt="" class="img-fluid tech-img mb-3" width="128" height="128" loading="lazy">
+                    <p>Angular Js</p>
+                  </div>
+
+                  <div class="icon text-center">
+                    <img src="{% static 'img/vue.webp' %}" alt="" class="img-fluid tech-img mb-3" width="128" height="128" loading="lazy">
+                    <p>Vue Js</p>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div><!-- End Tab Content 1 -->
+
+          <div class="tab-pane" id="tab-2">
+            <div class="row gy-4">
+              <div class="col-md-12">
+                <div class="icons">
+                  <div class="icon text-center">
+                    <img src="{% static 'img/mongo.webp' %}" alt="" class="img-fluid tech-img mb-3" width="128" height="128" loading="lazy">
+                    <p>MongoDB</p>
+                  </div>
+
+                  <div class="icon text-center">
+                    <img src="{% static 'img/dynamo.webp' %}" alt="" class="img-fluid tech-img mb-3" width="128" height="128" loading="lazy">
+                    <p>DynamoDB</p>
+                  </div>
+
+                  <div class="icon text-center">
+                    <img src="{% static 'img/postgre.webp' %}" alt="" class="img-fluid tech-img mb-3" width="128" height="128" loading="lazy">
+                    <p>PostgreSQL</p>
+                  </div>
+
+                  <div class="icon text-center">
+                    <img src="{% static 'img/mysql.webp' %}" alt="" class="img-fluid tech-img mb-3" width="128" height="128" loading="lazy">
+                    <p>MySQL</p>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div><!-- End Tab Content 2 -->
+
+          <div class="tab-pane" id="tab-3">
+            <div class="row gy-4">
+              <div class="col-md-12">
+                <div class="icons">
+                  <div class="icon text-center">
+                    <img src="{% static 'img/python.webp' %}" alt="" class="img-fluid tech-img mb-3" width="128" height="128" loading="lazy">
+                    <p>Python</p>
+                  </div>
+
+                  <div class="icon text-center">
+                    <img src="{% static 'img/django.webp' %}" alt="" class="img-fluid tech-img mb-3" width="128" height="128" loading="lazy">
+                    <p>Django</p>
+                  </div>
+
+                  <div class="icon text-center">
+                    <img src="{% static 'img/node.webp' %}" alt="" class="img-fluid tech-img mb-3" width="128" height="128" loading="lazy">
+                    <p>Node Js</p>
+                  </div>
+
+                  <div class="icon text-center">
+                    <img src="{% static 'img/php.webp' %}" alt="" class="img-fluid tech-img mb-3" width="128" height="128" loading="lazy">
+                    <p>PHP</p>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div><!-- End Tab Content 3 -->
+
+          <div class="tab-pane" id="tab-4">
+            <div class="row gy-4">
+              <div class="col-md-12">
+                <div class="icons">
+                  <div class="icon text-center">
+                    <img src="{% static 'img/android.webp' %}" alt="" class="img-fluid tech-img mb-3" width="128" height="128" loading="lazy">
+                    <p>Android</p>
+                  </div>
+
+                  <div class="icon text-center">
+                    <img src="{% static 'img/ios.webp' %}" alt="" class="img-fluid tech-img mb-3" width="128" height="128" loading="lazy">
+                    <p>IOS</p>
+                  </div>
+
+                  <div class="icon text-center">
+                    <img src="{% static 'img/react.webp' %}" alt="" class="img-fluid tech-img mb-3" width="128" height="128" loading="lazy">
+                    <p>React-Native</p>
+                  </div>
+
+                  <div class="icon text-center">
+                    <img src="{% static 'img/flutter.webp' %}" alt="" class="img-fluid tech-img mb-3" width="128" height="128" loading="lazy">
+                    <p>Flutter</p>
+                  </div>
+
+                  <div class="icon text-center">
+                    <img src="{% static 'img/swift2.webp' %}" alt="" class="img-fluid tech-img mb-3" width="128" height="128" loading="lazy">
+                    <p>Swift</p>
+                  </div>
+
+                  <div class="icon text-center">
+                    <img src="{% static 'img/kotlin.webp' %}" alt="" class="img-fluid tech-img mb-3" width="128" height="128" loading="lazy">
+                    <p>Kotlin</p>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div><!-- End Tab Content 4 -->
+
+          <div class="tab-pane" id="tab-5">
+            <div class="row gy-4">
+              <div class="col-md-12">
+                <div class="icons">
+                  <div class="icon text-center">
+                    <img src="{% static 'img/figma.webp' %}" alt="" class="img-fluid tech-img mb-3" width="128" height="128" loading="lazy">
+                    <p>Figma</p>
+                  </div>
+
+                  <div class="icon text-center">
+                    <img src="{% static 'img/sketch.webp' %}" alt="" class="img-fluid tech-img mb-3" width="128" height="128" loading="lazy">
+                    <p>Sketch</p>
+                  </div>
+
+                  <div class="icon text-center">
+                    <img src="{% static 'img/illustrator.webp' %}" alt="" class="img-fluid tech-img mb-3" width="128" height="128" loading="lazy">
+                    <p>Illustrator</p>
+                  </div>
+
+                  <div class="icon text-center">
+                    <img src="{% static 'img/photoshop.webp' %}" alt="" class="img-fluid tech-img mb-3" width="128" height="128" loading="lazy">
+                    <p>Photoshop</p>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div><!-- End Tab Content 5 -->
+
+          <div class="tab-pane" id="tab-6">
+            <div class="row gy-4">
+              <div class="col-md-12">
+                <div class="icons">
+                  <div class="icon text-center">
+                    <img src="{% static 'img/aws.webp' %}" alt="" class="img-fluid tech-img mb-3" width="128" height="128" loading="lazy">
+                    <p>AWS</p>
+                  </div>
+
+                  <div class="icon text-center">
+                    <img src="{% static 'img/gcp.webp' %}" alt="" class="img-fluid tech-img mb-3" width="128" height="128" loading="lazy">
+                    <p>GCP</p>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div><!-- End Tab Content 6 -->
+
+        </div>
+
+      </div>
+    </section><!-- End Features Section -->
+
+    <!-- ======= Services Section ======= -->
+    <section id="models" class="services">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-header">
+          <h2>Engagement Models</h2>
+          <p>To measure the accomplishment of a business, you only need to explore the engagement models they have chosen over the years of their technological voyage.
+            Arkab Tech Solutions, while offering you a variety of engagement models, also assists you to choose the best one for the well-being of your corporation.</p>
+        </div>
+
+        <div class="row gy-5">
+
+          <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="200">
+            <div class="service-item">
+              <div class="img">
+                <img src="{% static 'img/services-1.webp' %}" class="img-fluid" alt="" width="100%" height="auto" loading="lazy">
+              </div>
+              <div class="details position-relative">
+                <div class="icon">
+                  <i class="bi bi-diagram-3"></i>
+                </div>
+                <a href="#" class="stretched-link">
+                  <h3>Dedicated Workforce</h3>
+                </a>
+                <p class="text-start">Arkab Tech Solutions, being a hub of young, enthusiastic, devoted, and hardworking software developers, offers you extraordinary software development
+                  services for the efficient functioning of your business.</p>
+              </div>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="300">
+            <div class="service-item">
+              <div class="img">
+                <img src="{% static 'img/services-5.webp' %}" class="img-fluid" alt="" width="100%" height="auto" loading="lazy">
+              </div>
+              <div class="details position-relative">
+                <div class="icon">
+                  <i class="bi bi-cash-coin"></i>
+                </div>
+                <a href="#" class="stretched-link">
+                  <h3>Fixed Cost Projects</h3>
+                </a>
+                <p class="text-start">We, setting the client’s budget, comfort, and satisfaction our priority, propose the superlative software development solutions at abridged project cost and time under detailed planning.</p>
+              </div>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="400">
+            <div class="service-item">
+              <div class="img">
+                <img src="{% static 'img/services-2.webp' %}" class="img-fluid" alt="" width="100%" height="auto" loading="lazy">
+              </div>
+              <div class="details position-relative">
+                <div class="icon">
+                  <i class="bi bi-broadcast"></i>
+                </div>
+                <a href="#" class="stretched-link">
+                  <h3>Support</h3>
+                </a>
+                <p class="text-start">We offer a support contract once we release the product. During this, our staff is always available to make tiny recurring changes to your project in response to user feedback, platform upgrades, or force-major events.</p>
+              </div>
+            </div>
+          </div><!-- End Service Item -->
+
+        </div>
+
+      </div>
+    </section><!-- End Services Section -->
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container">
+
+        <div class="section-header">
+          <h2>Contact</h2>
+          <p>If you have any queries do contact us at the following and we hope you have a good time here with us.</p>
+        </div>
+
+        <div class="row" data-aos="fade-in">
+
+          <div class="col-lg-5 d-flex align-items-stretch">
+            <div class="info">
+              <div class="address">
+                <i class="bi bi-geo-alt"></i>
+                <h4>Location:</h4>
+                <p>21-D Marghzar Colony Lahore 54000, Punjab, Pakistan.</p>
+              </div>
+
+              <div class="email">
+                <i class="bi bi-envelope"></i>
+                <h4>Email:</h4>
+                <p>contact@arkabts.com</p>
+              </div>
+
+              <div class="phone">
+                <i class="bi bi-phone"></i>
+                <h4>Call:</h4>
+                <p>+92 340 1656526</p>
+              </div>
+
+              <iframe title="Arkab Tech Solutions" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d19242.40504448932!2d74.24872113112805!3d31.50743577459245!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x8abf737c33280454!2sNexQuery%20(Private)%20Limited!5e0!3m2!1sen!2s!4v1653776955287!5m2!1sen!2s" frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe> -->
+            </div>
+
+          </div>
+
+          <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
+            <iframe name="dummy-frame" id="dummy-frame" style="display:none;"></iframe>
+            <form onsubmit="sendEmail()" target="dummy-frame" class="php-email-form">
+              <div class="row">
+                <div class="form-group col-md-6">
+                  <label for="name">Your Name</label>
+                  <input type="text" name="name" class="form-control" id="name" required>
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="email">Your Email</label>
+                  <input type="email" class="form-control" name="email" id="email" required>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="subject">Subject</label>
+                <input type="text" class="form-control" name="subject" id="subject" required>
+              </div>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea class="form-control" name="message" id="message" rows="10" required></textarea>
+              </div>
+              <div class="my-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div id="alertContact" class="sent-message">Your message has been sent. Thank you!</div>
+              </div>
+              <div class="text-center"><button type="submit">Send Message</button></div>
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+<script>
+
+    function sendEmail() {
+         var name=document.getElementById("name").value;
+         var email=document.getElementById("email").value;
+         var subject=document.getElementById("subject").value;
+         var message=document.getElementById("message").value;
+         let contactInfo={
+            name:name,
+            email:email,
+            subject:subject,
+            message:message,
+         }
+         $(document).ready(function () {
+             $.ajax({
+                contentType: 'application/json; charset=utf-8',
+                dataType: 'json',
+                type: 'POST',
+                url: '{% url 'home' %}',
+                headers: {//<==
+                    "X-CSRFTOKEN": "{{ csrf_token }}"//<==
+                },
+                data: JSON.stringify(contactInfo),
+                success: function(data) {
+                //Success code
+                    if(data.status==='200'){
+                        $("#alertContact").fadeTo(2000, 500).slideUp(500, function() {
+                            $("#alertContact").slideUp(500);
+                          });
+                        document.getElementById("name").value="";
+                        document.getElementById("email").value="";
+                        document.getElementById("subject").value="";
+                        document.getElementById("message").value="";
+                    }
+                },
+                failure: function (response) {
+                    $('#result').html(response);
+                }
+            });
+        });
+
+    }
+</script>
+{% endblock %}

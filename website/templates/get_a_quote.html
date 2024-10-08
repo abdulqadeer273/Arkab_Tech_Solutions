@@ -1,0 +1,160 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+    <!-- ======= Hero Section ======= -->
+    <section id="hero-1">
+
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-lg-12 pt-5 pt-lg-0 order-2 order-lg-1 d-flex align-items-center">
+                    <div data-aos="zoom-out" data-aos-delay="100">
+                        <div class="breadcrumbs">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <h3 class="text-white fw-bold">Get A Quote</h3>
+                                <ol>
+                                    <li><a href="{% url 'home' %}">Home</a></li>
+                                    <li>Get A Quote</li>
+                                </ol>
+                            </div>
+                        </div>
+                        <div class="col-lg-7">
+                            <h1><span>Tell us</span> how we can help</h1>
+                            <h2>We love to fix complex problems and come up with innovative solutions. Tell us about your
+                                project and we’ll work together to bring you the best results.</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section><!-- End Hero -->
+
+    <main id="main">
+
+        <!-- ======= Breadcrumbs ======= -->
+
+
+        <!-- ======= Contact Section ======= -->
+        <section class="contact">
+            <div class="container">
+
+                <div class="section-header">
+                    <h2>Get A Quote</h2>
+                    <p>Tell us about your project. We’ll be in touch soon.</p>
+                </div>
+
+                <div class="row gy-5 gx-lg-5">
+
+                    <div class="col-lg-12">
+                        <iframe name="dummy-frame" id="dummy-frame" style="display:none;"></iframe>
+                        <form onsubmit="sendEmail()" target="dummy-frame" class="php-email-form">
+                            <div class="row">
+                                <div class="col-md-6 form-group">
+                                    <input type="text" name="quote_name" class="form-control" id="quote_name" placeholder="Your Name" required>
+                                </div>
+                                <div class="col-md-6 form-group mt-3 mt-md-0">
+                                    <input type="email" class="form-control" name="quote_email" id="quote_email" placeholder="Your Email" required>
+                                </div>
+                            </div>
+                            <div class="row mt-3">
+                                <div class="col-md-6 form-group">
+                                    <select class="form-select form-control" id="quote_service" aria-label="Floating label select example" required>
+                                        <option selected>Which service are you interested in?</option>
+                                        <option value="1">Web Application Development</option>
+                                        <option value="2">Custom Application Development</option>
+                                        <option value="3">Mobile Application Development</option>
+                                        <option value="2">UI/UX Design</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-6 form-group mt-3 mt-md-0">
+                                    <select class="form-select form-control" id="quote_budget" aria-label="Floating label select example" required>
+                                        <option selected>What's your estimated budget?</option>
+                                        <option value="1">$2000-$5000</option>
+                                        <option value="2">$5000-$20000</option>
+                                        <option value="3">$20000-$50000</option>
+                                        <option value="3">$50000 or Above</option>
+                                        <option value="3">Request Budget Guidance</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row mt-3">
+                                <div class="col-md-6 form-group">
+                                    <input type="tel" name="quote_name" class="form-control" id="quote_phone"
+                                        placeholder="Your Phone" required>
+                                </div>
+                                <div class="col-md-6 form-group mt-3 mt-md-0">
+                                    <input type="text" class="form-control" name="quote_company_name" id="quote_company_name"
+                                        placeholder="Your Company/Organization" required>
+                                </div>
+                            </div>
+                            <div class="form-group mt-3">
+                                <textarea class="form-control" rows="10" name="message" id="quote_message" placeholder="Let us know a bit about the project you have in mind..." required></textarea>
+                            </div>
+                            <div class="my-3">
+                                <div class="loading">Loading</div>
+                                <div class="error-message"></div>
+                                <div id="quote_alertContact" class="sent-message">Your message has been sent. Thank you!</div>
+                            </div>
+                            <div class="text-center"><button type="submit">Send Message</button></div>
+                        </form>
+                    </div><!-- End Contact Form -->
+
+                </div>
+
+            </div>
+        </section><!-- End Contact Section -->
+
+    </main><!-- End #main -->
+<script>
+    function sendEmail() {
+         var quote_name=document.getElementById("quote_name").value;
+         var quote_email=document.getElementById("quote_email").value;
+         var quote_service=document.getElementById("quote_service").value;
+         var quote_budget=document.getElementById("quote_budget").value;
+         var quote_phone=document.getElementById("quote_phone").value;
+         var quote_company_name=document.getElementById("quote_company_name").value;
+         var quote_message=document.getElementById("quote_message").value;
+         let contactInfo={
+            quote_name:quote_name,
+            quote_email:quote_email,
+            quote_service:quote_service,
+            quote_budget:quote_budget,
+            quote_phone:quote_phone,
+            quote_company_name:quote_company_name,
+            quote_message:quote_message,
+         }
+         $(document).ready(function () {
+             $.ajax({
+                contentType: 'application/json; charset=utf-8',
+                dataType: 'json',
+                type: 'POST',
+                url: '{% url 'get-a-quote' %}',
+                headers: {//<==
+                    "X-CSRFTOKEN": "{{ csrf_token }}"//<==
+                },
+                data: JSON.stringify(contactInfo),
+                success: function(data) {
+                //Success code
+                    if(data.status==='200'){
+                        $("#quote_alertContact").fadeTo(2000, 500).slideUp(500, function() {
+                            $("#quote_alertContact").slideUp(500);
+                          });
+                        document.getElementById("quote_name").value="";
+                        document.getElementById("quote_email").value="";
+                        document.getElementById("quote_service").value="";
+                        document.getElementById("quote_budget").value="";
+                        document.getElementById("quote_phone").value="";
+                        document.getElementById("quote_company_name").value="";
+                        document.getElementById("quote_message").value="";
+                    }
+                },
+                failure: function (response) {
+                    $('#result').html(response);
+                }
+            });
+        });
+
+    }
+</script>
+{% endblock %}

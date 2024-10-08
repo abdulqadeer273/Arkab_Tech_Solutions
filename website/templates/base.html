@@ -1,0 +1,232 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>Arkab Tech Solutions - Software Development Company</title>
+    <meta content="Arkab Tech Solutions, a software company that is providing robust & reliable solutions in Web Application Development, Custom Software Application Development, Mobile Application Development and UI/UX Designs to surpass your business expectations."
+          name="description">
+    <meta content="NEXQUERY, NexQuery, nexquery, nexquery.com, nex, query, next, nextquery, web development, web application development, software development, custom software development, mobile application development, software companies in pakistan, software houses in pakistan, top software companies in pakistan, best software house"
+          name="keywords">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+
+
+    <!-- Favicons -->
+    <link href="{% static 'img/favicon-32x32.webp' %}" rel="icon" sizes="32x32">
+    <link href="{% static 'img/favicon-16x16.webp' %}" rel="icon" sizes="16x16">
+    <link href="{% static 'img/favicon.webp' %}" rel="icon" sizes="270x270">
+    <link href="{% static 'img/android-chrome-192x192.webp' %}" rel="android-chrome" sizes="192x192">
+    <link href="{% static 'img/android-chrome-512x512.webp' %}" rel="android-chrome" sizes="512x512">
+    <link href="{% static 'img/apple-touch-icon.webp' %}" rel="apple-touch-icon" sizes="180x180">
+    <meta content="{% static 'img/favicon.webp' %}" name="msapplication-TileImage">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link as="font"
+          crossorigin
+          href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap" rel="preload">
+
+    <!-- Vendor CSS Files -->
+    <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+    <link href="{% static 'vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+    <link href="{% static 'vendor/aos/aos.css' %}" rel="stylesheet">
+    <link href="{% static 'vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+    <link href="{% static 'vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+
+    <!-- Variables CSS Files. Uncomment your preferred color scheme -->
+    <link href="{% static 'css/variables.css'%}" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <link href="{% static 'css/main.css'%}" rel="stylesheet">
+
+</head>
+
+<body>
+
+<!-- ======= Header ======= -->
+<header class="header fixed-top" data-scrollto-offset="0" id="header">
+    <div class="container d-flex align-items-center justify-content-between">
+
+        <a aria-label="NexQuery" class="logo d-flex align-items-center scrollto me-auto me-lg-0" href="{% url 'home' %}">
+            <img alt="NexQuery logo" height="auto" loading="lazy" src="{% static 'img/logo.webp' %}" width="100%">
+        </a>
+
+        <nav class="navbar" id="navbar">
+            <ul>
+                <li><a class="nav-link scrollto" href="{% url 'home' %}#hero">Home</a></li>
+                <li><a class="nav-link scrollto" href="{% url 'home' %}#about">About</a></li>
+                <li><a class="nav-link scrollto" href="{% url 'home' %}#services">Services</a></li>
+                <li><a class="nav-link scrollto" href="{% url 'home' %}#why-us">Why Us</a></li>
+                <li><a class="nav-link scrollto" href="{% url 'home' %}#technologies">Technologies</a></li>
+                <li><a class="nav-link scrollto" href="{% url 'home' %}#models">Our Models</a></li>
+                <li><a class="nav-link scrollto" href="{% url 'home' %}#contact">Contact</a></li>
+            </ul>
+            <i class="bi bi-list mobile-nav-toggle d-none"></i>
+        </nav>
+
+        <!-- <a class="btn-getstarted scrollto d-lg-block d-sm-none" href="index.html#about">GET A QUOTE</a> -->
+
+    </div>
+</header>
+
+
+{% block content %}
+{% endblock %}
+
+<!-- ======= Footer ======= -->
+<footer class="footer" id="footer">
+
+    <div class="footer-content">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-info">
+                        <!-- <h3>HeroBiz</h3> -->
+                        <img alt="" class="mb-3" height="41" loading="lazy" src="{% static 'img/logo_nq.webp' %}"
+                             width="207">
+                        <p>
+                            Arkab Tech Solutions, a software company that is providing robust & reliable solutions
+                            in software development to surpass your business expectations.
+                        </p>
+                    </div>
+                    <div class="social-links order-first order-lg-last mb-3 mb-lg-0">
+                        <a aria-label="Twitter" class="twitter" href="https://twitter.com/nexquery"><i
+                                class="bi bi-twitter"></i></a>
+                        <a aria-label="Facebook" class="facebook" href="https://www.facebook.com/nexquery"><i
+                                class="bi bi-facebook"></i></a>
+                        <a aria-label="Instagram" class="instagram" href="https://www.instagram.com/nexquery/"><i
+                                class="bi bi-instagram"></i></a>
+                        <!-- <a href="#" class="google-plus"><i class="bi bi-skype"></i></a> -->
+                        <a aria-label="LinkedIn" class="linkedin" href="https://www.linkedin.com/company/nexquery"><i
+                                class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 footer-links">
+                    <h4>Useful Links</h4>
+                    <ul>
+                        <li><i class="bi bi-chevron-right"></i> <a href="{% url 'home' %}#hero">Home</a></li>
+                        <li><i class="bi bi-chevron-right"></i> <a href="{% url 'home' %}#about">About us</a></li>
+                        <li><i class="bi bi-chevron-right"></i> <a href="{% url 'home' %}#services">Services</a></li>
+                        <li><i class="bi bi-chevron-right"></i> <a href="{% url 'home' %}#technologies">Technology Stacks</a>
+                        </li>
+                        <li><i class="bi bi-chevron-right"></i> <a href="{% url 'home' %}#models">Engagement Models</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-6 footer-links">
+                    <h4>Our Services</h4>
+                    <ul>
+                        <li><i class="bi bi-chevron-right"></i> <a href="{% url 'home' %}#services">Web Application
+                            Development</a></li>
+                        <li><i class="bi bi-chevron-right"></i> <a href="{% url 'home' %}#services">Custom Software
+                            Development</a></li>
+                        <li><i class="bi bi-chevron-right"></i> <a href="{% url 'home' %}#services">Mobile Application
+                            Development</a></li>
+                        <li><i class="bi bi-chevron-right"></i> <a href="{% url 'home' %}#services">UI/UX Design</a></li>
+                        <li><i class="bi bi-chevron-right"></i> <a href="{% url 'home' %}#services">DevOps</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-6 footer-info">
+                    <h4>Our Vision</h4>
+                    <p>To enhance our client’s business progression with innovative designs and unique software
+                        development solutions, contributing towards the competitive digital global market.</p>
+                    <a class="get-started align-self-start mt-4" href="{% url 'get-a-quote' %}"><span>Let's Start A Conversation</span><i
+                            class="bi bi-arrow-right"></i></a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-legal text-center">
+        <div class="container d-flex flex-column flex-lg-row justify-content-center align-items-center">
+
+            <div class="d-flex flex-column align-items-center">
+                <div class="copyright">
+                    <!-- &copy; Copyright <strong><span>HeroBiz</span></strong>. All Rights Reserved -->
+                    <!--Copyright © <script>document.write(new Date().getFullYear())</script> <strong>NexQuery</strong>. All Rights Reserved-->
+                    Copyright © <span id="copyright-year">2020</span> <strong>NexQuery</strong>. All Rights Reserved
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</footer><!-- End Footer -->
+
+<a aria-label="Back-to-top" class="scroll-top d-flex align-items-center justify-content-center" href="#"><i
+        class="bi bi-arrow-up-short"></i></a>
+
+<div id="preloader"></div>
+
+<!-- Vendor JS Files -->
+<script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+<script src="{% static 'vendor/purecounter/purecounter.js' %}"></script>
+<script src="{% static 'vendor/aos/aos.js' %}"></script>
+<script src="{% static 'vendor/glightbox/js/glightbox.min.js' %}"></script>
+<script src="{% static 'vendor/isotope-layout/isotope.pkgd.min.js' %}"></script>
+<script src="{% static 'vendor/swiper/swiper-bundle.min.js' %}"></script>
+<!--<script src="{% static 'vendor/php-email-form/validate.js' %}"></script>-->
+
+<!-- Template Main JS File -->
+<script src="{% static 'js/main.js' %}"></script>
+<script>
+    document.querySelector('#copyright-year').innerText = new Date().getFullYear();
+(function () {
+  "use strict";
+
+  let forms = document.querySelectorAll('.php-email-form');
+
+  forms.forEach( function(e) {
+    e.addEventListener('submit', function(event) {
+      event.preventDefault();
+
+      let thisForm = this;
+
+      let action = thisForm.getAttribute('action');
+      let recaptcha = thisForm.getAttribute('data-recaptcha-site-key');
+
+      if( ! action ) {
+        displayError(thisForm, 'The form action property is not set!')
+        return;
+      }
+      thisForm.querySelector('.loading').classList.add('d-block');
+      thisForm.querySelector('.error-message').classList.remove('d-block');
+      thisForm.querySelector('.sent-message').classList.remove('d-block');
+
+      let formData = new FormData( thisForm );
+
+      if ( recaptcha ) {
+        if(typeof grecaptcha !== "undefined" ) {
+          grecaptcha.ready(function() {
+            try {
+              grecaptcha.execute(recaptcha, {action: 'php_email_form_submit'})
+              .then(token => {
+                formData.set('recaptcha-response', token);
+                php_email_form_submit(thisForm, action, formData);
+              })
+            } catch(error) {
+              displayError(thisForm, error)
+            }
+          });
+        } else {
+          displayError(thisForm, 'The reCaptcha javascript API url is not loaded!')
+        }
+      } else {
+        php_email_form_submit(thisForm, action, formData);
+      }
+    });
+  });
+</script>
+
+</body>
+
+</html>
